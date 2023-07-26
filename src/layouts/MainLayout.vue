@@ -104,10 +104,4 @@ export default defineComponent({
 .univer_button {
   width: 250px;
 }
-
-@media (max-width: 768px) {
-  body.lock {
-    overflow: hidden;
-  }
-}
 </style>

@@ -50,10 +50,16 @@ export default defineComponent({
 }
 
 .title_container {
+  position: relative;
   max-width: 1440px;
   margin: 0 auto;
-  background-color: #0a0a12;
-
+  background-color: #0a0a12b3;
+  margin-top: -110px;
+  height: 100px;
+  z-index: 1000;
+  border-radius: 5px;
+  border-color: blueviolet;
+  border: 2px;
 }
 
 .title_text {
@@ -62,5 +68,17 @@ export default defineComponent({
   color: white;
   font-size: 26px;
   text-align: center;
+}
+
+@media (max-width: 900px) {
+  .title_text {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .title_text {
+    font-size: 16px;
+  }
 }
 </style>
